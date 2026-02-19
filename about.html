@@ -1,0 +1,301 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About Us | TotalTech</title>
+  <meta name="description" content="Learn about TotalTech: our mission, delivery approach, and engineering values that power modern software products." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="assets/css/styles.css" />
+</head>
+<body data-page="about" class="min-h-screen flex flex-col antialiased">
+        <header class="site-header sticky top-0 z-50 border-b border-black">
+    <div class="zebra-header-wrap mx-auto px-4 sm:px-6 lg:px-8 py-[6px]">
+      <div class="top-utility hidden md:flex items-center justify-end gap-3 lg:gap-4 text-[13px] lg:text-[14px] leading-none pb-[10px]">
+        <a href="industries.html" data-route="industries" class="top-link inline-flex items-center">Industries</a>
+        <span class="utility-sep">|</span>
+        <a href="portfolio.html" data-route="portfolio" class="top-link inline-flex items-center">Portfolio</a>
+        <span class="utility-sep">|</span>
+        <a href="blog.html" data-route="blog" class="top-link inline-flex items-center">Blog</a>
+        <span class="utility-sep">|</span>
+        <a href="careers.html" data-route="careers" class="top-link inline-flex items-center">Careers</a>
+      </div>
+
+      <nav class="relative">
+        <div class="zebra-shell px-4 sm:px-6 lg:px-7">
+          <div class="zebra-header-main flex items-center gap-4 lg:gap-6">
+            <a href="index.html" class="zebra-brand-link shrink-0 inline-flex items-center" aria-label="TotalTech Home">
+              <img src="assets/images/logo.png" alt="TotalTech logo" class="zebra-brand-image" />
+            </a>
+
+            <a href="contact.html" class="zebra-cta lg:hidden ml-auto mobile-quick-quote whitespace-nowrap">Request a Quote</a>
+
+            <button id="mobileMenuButton" aria-expanded="false" aria-label="Open menu" class="lg:hidden inline-flex items-center justify-center w-11 h-11 rounded-full border border-slate-400 text-slate-800 bg-white/70">
+              <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                <path stroke-linecap="round" stroke-linejoin="round" d="M4 6h16M4 12h16M4 18h16" />
+              </svg>
+            </button>
+
+            <div class="hidden lg:grid flex-1 items-center grid-cols-3 gap-4">
+              <div></div>
+
+              <div class="flex items-center gap-6 xl:gap-8 justify-self-center">
+                <a href="index.html" data-route="home" class="nav-link">Home</a>
+
+                <div class="mega-parent relative">
+                  <a href="services.html" id="desktopServicesToggle" data-route="services" class="nav-link inline-flex items-center gap-1">
+                    Services
+                    <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                      <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                    </svg>
+                  </a>
+
+                  <div id="megaPanel" class="mega-panel absolute left-1/2 top-full w-screen -translate-x-1/2 pt-5">
+                    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+                      <div class="card-surface rounded-3xl overflow-hidden">
+                        <div class="grid lg:grid-cols-12">
+                          <div class="lg:col-span-8 p-8 lg:p-10">
+                            <p class="section-tag mb-4">Our Services</p>
+                            <h3 class="font-heading text-2xl font-semibold text-[#0B1C3D] mb-3">Full-width Mega Navigation Panel</h3>
+                            <p class="text-sm text-slate-600 mb-6">Scalable engineering services for startups, SMEs, and enterprises.</p>
+                            <div class="grid sm:grid-cols-2 gap-3 text-sm">
+                              <a href="services.html#website-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Website Development</a>
+                              <a href="services.html#web-application-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Web Application Development</a>
+                              <a href="services.html#mobile-application-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Mobile Application Development</a>
+                              <a href="services.html#crm-erp-solutions" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">CRM &amp; ERP Solutions</a>
+                              <a href="services.html#ui-ux-design" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">UI/UX Design</a>
+                              <a href="services.html#cloud-hosting" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Cloud &amp; Hosting</a>
+                              <a href="services.html#maintenance-support" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF] sm:col-span-2">Maintenance &amp; Support</a>
+                            </div>
+                          </div>
+
+                          <div class="lg:col-span-4 bg-[#0B1C3D] p-8 lg:p-10 text-white">
+                            <h4 class="font-heading text-lg mb-4">Category Highlights</h4>
+                            <div class="space-y-4">
+                              <div class="rounded-2xl overflow-hidden border border-white/15">
+                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Software engineering workspace" class="h-28 w-full object-cover" />
+                                <p class="px-3 py-2 text-xs text-slate-200">Custom Product Engineering</p>
+                              </div>
+                              <div class="rounded-2xl overflow-hidden border border-white/15">
+                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="App design and development" class="h-28 w-full object-cover" />
+                                <p class="px-3 py-2 text-xs text-slate-200">Cloud-ready Digital Platforms</p>
+                              </div>
+                            </div>
+                            <a href="services.html" class="primary-btn mt-6 w-full text-sm">Explore All Services</a>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <a href="about.html" data-route="about" class="nav-link">About Us</a>
+                <a href="contact.html" data-route="contact" class="nav-link">Contact</a>
+              </div>
+
+              <div class="justify-self-end">
+                <a href="contact.html" class="zebra-cta whitespace-nowrap min-w-[216px]">
+                  Request a Quote
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-5 h-5" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M9 5l7 7-7 7" />
+                  </svg>
+                </a>
+              </div>
+            </div>
+          </div>
+
+          <div id="mobileMenu" class="hidden lg:hidden mt-4">
+            <div class="zebra-mobile-panel p-4 space-y-4">
+              <div class="grid gap-3 text-sm font-semibold text-slate-700">
+                <div class="mobile-top-links flex flex-wrap items-center gap-2 border-b border-slate-200 pb-3 text-[12px] font-semibold text-slate-600">
+                <a href="industries.html" data-route="industries">Industries</a>
+                <span class="text-slate-400">|</span>
+                <a href="portfolio.html" data-route="portfolio">Portfolio</a>
+                <span class="text-slate-400">|</span>
+                <a href="blog.html" data-route="blog">Blog</a>
+                <span class="text-slate-400">|</span>
+                <a href="careers.html" data-route="careers">Careers</a>
+              </div>
+                <a href="index.html" data-route="home" class="nav-link">Home</a>
+
+                <button id="mobileServicesToggle" aria-expanded="false" class="w-full inline-flex items-center justify-between rounded-xl border border-slate-300 px-3 py-2 text-left">
+                  <span>Services</span>
+                  <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
+                    <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
+                  </svg>
+                </button>
+
+                <div id="mobileServicesPanel" class="hidden rounded-xl border border-slate-200 p-3 bg-slate-50">
+                  <div class="grid gap-2 text-xs">
+                    <a href="services.html#website-development">Website Development</a>
+                    <a href="services.html#web-application-development">Web Application Development</a>
+                    <a href="services.html#mobile-application-development">Mobile Application Development</a>
+                    <a href="services.html#crm-erp-solutions">CRM &amp; ERP Solutions</a>
+                    <a href="services.html#ui-ux-design">UI/UX Design</a>
+                    <a href="services.html#cloud-hosting">Cloud &amp; Hosting</a>
+                    <a href="services.html#maintenance-support">Maintenance &amp; Support</a>
+                  </div>
+                </div>
+
+                <a href="about.html" data-route="about" class="nav-link">About Us</a>
+                <a href="contact.html" data-route="contact" class="nav-link">Contact Us</a>
+                <a href="contact.html" class="zebra-cta mt-2">Request a Quote</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main class="flex-1">
+    <section class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-20">
+      <div class="hero-grid rounded-3xl bg-[#0B1C3D] text-white p-8 sm:p-10 lg:p-14 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="section-tag !bg-white/10 !border-white/30 !text-white mb-4">About TotalTech</p>
+          <h1 class="font-heading text-3xl sm:text-4xl lg:text-5xl font-semibold leading-tight mb-5">We Design and Engineer Software That Moves Businesses Forward</h1>
+          <p class="text-slate-200 mb-8">TotalTech is a product-focused technology company helping brands build reliable digital platforms with elegant UI, robust architecture, and measurable business value.</p>
+          <a href="contact.html" class="primary-btn">Discuss Your Vision</a>
+        </div>
+
+        <div class="rounded-3xl overflow-hidden border border-white/20 shadow-xl">
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?auto=format&fit=crop&w=1200&q=80" alt="TotalTech collaboration team" class="h-[380px] w-full object-cover" />
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="max-w-3xl">
+          <p class="section-tag mb-3">Who We Are</p>
+          <h2 class="font-heading text-3xl font-semibold text-[#0B1C3D]">Technology, Strategy, and Execution Under One Roof</h2>
+          <p class="mt-3 text-slate-600">Our cross-functional teams combine product strategy, interface design, and software engineering to build products that perform at scale.</p>
+        </div>
+
+        <div class="mt-10 grid md:grid-cols-3 gap-6">
+          <article class="card-surface p-6 card-hover">
+            <h3 class="font-heading text-xl text-[#0B1C3D]">Mission</h3>
+            <p class="text-sm text-slate-600 mt-3">Deliver practical, high-quality software solutions that help businesses grow sustainably.</p>
+          </article>
+          <article class="card-surface p-6 card-hover">
+            <h3 class="font-heading text-xl text-[#0B1C3D]">Vision</h3>
+            <p class="text-sm text-slate-600 mt-3">Become the most trusted digital transformation partner for global organizations.</p>
+          </article>
+          <article class="card-surface p-6 card-hover">
+            <h3 class="font-heading text-xl text-[#0B1C3D]">Values</h3>
+            <p class="text-sm text-slate-600 mt-3">Ownership, transparency, technical excellence, and long-term client relationships.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 grid lg:grid-cols-2 gap-10 items-center">
+        <div>
+          <p class="section-tag mb-3">Branding Guidelines</p>
+          <h2 class="font-heading text-3xl font-semibold text-[#0B1C3D]">Designed with a Professional Visual System</h2>
+          <p class="mt-3 text-slate-600">This website follows your requested brand strategy with professional typography, consistent color hierarchy, and clean modern layouts.</p>
+          <div class="mt-6 space-y-3 text-sm text-slate-700">
+            <div class="card-surface p-4"><strong class="text-[#0B1C3D]">60% Primary:</strong> dark navy sections establish trust and depth.</div>
+            <div class="card-surface p-4"><strong class="text-[#1F6BFF]">30% Secondary:</strong> blue surfaces guide flow and content hierarchy.</div>
+            <div class="card-surface p-4"><strong class="text-[#0b6450]">10% Accent:</strong> teal reserved for CTAs and high-intent actions.</div>
+          </div>
+        </div>
+
+        <div class="grid grid-cols-2 gap-4">
+          <div class="card-surface p-5 text-center">
+            <p class="font-heading text-3xl text-[#1F6BFF]">8+</p>
+            <p class="text-sm text-slate-600 mt-1">Years Experience</p>
+          </div>
+          <div class="card-surface p-5 text-center">
+            <p class="font-heading text-3xl text-[#1F6BFF]">70+</p>
+            <p class="text-sm text-slate-600 mt-1">Experts</p>
+          </div>
+          <div class="card-surface p-5 text-center">
+            <p class="font-heading text-3xl text-[#1F6BFF]">14</p>
+            <p class="text-sm text-slate-600 mt-1">Industries Served</p>
+          </div>
+          <div class="card-surface p-5 text-center">
+            <p class="font-heading text-3xl text-[#1F6BFF]">120+</p>
+            <p class="text-sm text-slate-600 mt-1">Projects Delivered</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-16 bg-white">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
+        <div class="rounded-3xl bg-[#1F6BFF] text-white p-8 sm:p-10 lg:p-12 flex flex-col lg:flex-row lg:items-center lg:justify-between gap-6">
+          <div>
+            <p class="section-tag !bg-white/10 !border-white/30 !text-white mb-3">Let Us Build Together</p>
+            <h2 class="font-heading text-3xl font-semibold">Need a Team That Understands Product and Business?</h2>
+            <p class="mt-3 text-blue-100">Collaborate with TotalTech for practical planning, strong implementation, and dependable support.</p>
+          </div>
+          <a href="contact.html" class="primary-btn whitespace-nowrap">Contact Our Team</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="bg-[#0B1C3D] text-slate-200 mt-16">
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+      <div>
+        <p class="font-heading text-2xl font-semibold text-white">Total<span class="text-[#00E5A8]">Tech</span></p>
+        <p class="mt-3 text-sm text-slate-300">Modern software studio delivering reliable digital products with professional execution.</p>
+      </div>
+      <div>
+        <h3 class="font-heading text-white mb-3">Company</h3>
+        <div class="space-y-2 text-sm">
+          <a href="about.html" class="footer-link block">About Us</a>
+          <a href="services.html" class="footer-link block">Services</a>
+          <a href="portfolio.html" class="footer-link block">Portfolio</a>
+          <a href="careers.html" class="footer-link block">Careers</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-heading text-white mb-3">Services</h3>
+        <div class="space-y-2 text-sm">
+          <a href="services.html#website-development" class="footer-link block">Website Development</a>
+          <a href="services.html#web-application-development" class="footer-link block">Web Apps</a>
+          <a href="services.html#mobile-application-development" class="footer-link block">Mobile Apps</a>
+          <a href="services.html#crm-erp-solutions" class="footer-link block">CRM &amp; ERP</a>
+        </div>
+      </div>
+      <div>
+        <h3 class="font-heading text-white mb-3">Contact</h3>
+        <div class="space-y-2 text-sm text-slate-300">
+          <p>hello@totaltech.com</p>
+          <p>+1 (555) 321-7788</p>
+          <p>New York, United States</p>
+          <a href="contact.html" class="primary-btn mt-3">Talk to Team</a>
+        </div>
+      </div>
+    </div>
+    <div class="border-t border-white/10">
+      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-xs text-slate-400 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+        <p>&copy; 2026 TotalTech. All rights reserved.</p>
+        <p>Built with HTML, Tailwind CSS, and JavaScript.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="assets/js/main.js?v=20260220b"></script>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
