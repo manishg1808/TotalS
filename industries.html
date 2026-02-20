@@ -9,7 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
   <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet" />
   <script src="https://cdn.tailwindcss.com"></script>
-  <link rel="stylesheet" href="assets/css/styles.css" />
+  <link rel="stylesheet" href="assets/css/styles.css?v=20260220f" />
 </head>
 <body data-page="industries" class="min-h-screen flex flex-col antialiased">
         <header class="site-header sticky top-0 z-50 border-b border-black">
@@ -46,7 +46,7 @@
                 <a href="index.html" data-route="home" class="nav-link">Home</a>
 
                 <div class="mega-parent relative">
-                  <a href="services.html" id="desktopServicesToggle" data-route="services" class="nav-link inline-flex items-center gap-1">
+                  <a href="services.html" id="desktopServicesToggle" data-route="services" aria-expanded="false" aria-haspopup="true" class="nav-link inline-flex items-center gap-1">
                     Services
                     <svg xmlns="http://www.w3.org/2000/svg" class="w-4 h-4" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2">
                       <path stroke-linecap="round" stroke-linejoin="round" d="M19 9l-7 7-7-7" />
@@ -55,37 +55,95 @@
 
                   <div id="megaPanel" class="mega-panel absolute left-1/2 top-full w-screen -translate-x-1/2 pt-5">
                     <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8">
-                      <div class="card-surface rounded-3xl overflow-hidden">
-                        <div class="grid lg:grid-cols-12">
-                          <div class="lg:col-span-8 p-8 lg:p-10">
-                            <p class="section-tag mb-4">Our Services</p>
-                            <h3 class="font-heading text-2xl font-semibold text-[#0B1C3D] mb-3">Full-width Mega Navigation Panel</h3>
-                            <p class="text-sm text-slate-600 mb-6">Scalable engineering services for startups, SMEs, and enterprises.</p>
-                            <div class="grid sm:grid-cols-2 gap-3 text-sm">
-                              <a href="services.html#website-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Website Development</a>
-                              <a href="services.html#web-application-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Web Application Development</a>
-                              <a href="services.html#mobile-application-development" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Mobile Application Development</a>
-                              <a href="services.html#crm-erp-solutions" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">CRM &amp; ERP Solutions</a>
-                              <a href="services.html#ui-ux-design" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">UI/UX Design</a>
-                              <a href="services.html#cloud-hosting" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF]">Cloud &amp; Hosting</a>
-                              <a href="services.html#maintenance-support" class="card-hover rounded-xl border border-slate-200 px-4 py-3 hover:border-[#1F6BFF] sm:col-span-2">Maintenance &amp; Support</a>
+                      <div class="mega-surface">
+                        <div class="mega-grid">
+                          <div class="mega-content">
+                            <p class="mega-tag">Services Catalog</p>
+                            <h3 class="mega-title">Build Faster With Focused Engineering Services</h3>
+                            <p class="mega-subtitle">Choose a category to preview delivery scope, then jump directly to the detailed service page section.</p>
+
+                            <div class="mega-categories" role="list">
+                              <a href="services.html#website-development" class="mega-category is-active" data-mega-image="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" data-mega-title="Website Development" data-mega-caption="Conversion-focused websites with strong performance, SEO structure, and clear content hierarchy.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="3" y="4" width="18" height="16" rx="2"></rect><path d="M3 9h18"></path></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">Website Development</span>
+                                  <span class="mega-desc">Corporate sites and landing funnels</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#web-application-development" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?auto=format&fit=crop&w=1200&q=80" data-mega-title="Web Application Development" data-mega-caption="Secure, scalable web products with role-based modules and custom workflows.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 6h16"></path><path d="M4 12h10"></path><path d="M4 18h7"></path><path d="M16 16l2 2 3-3"></path></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">Web Application Development</span>
+                                  <span class="mega-desc">Dashboards, portals, and workflow apps</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#mobile-application-development" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1526498460520-4c246339dccb?auto=format&fit=crop&w=1200&q=80" data-mega-title="Mobile Application Development" data-mega-caption="Android and iOS apps with intuitive UX, API integrations, and reliable releases.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><rect x="7" y="2.5" width="10" height="19" rx="2.2"></rect><path d="M11 18.5h2"></path></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">Mobile Application Development</span>
+                                  <span class="mega-desc">Cross-platform product experiences</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#crm-erp-solutions" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1553877522-43269d4ea984?auto=format&fit=crop&w=1200&q=80" data-mega-title="CRM & ERP Solutions" data-mega-caption="Process automation, data visibility, and enterprise-grade internal platforms.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3v18"></path><path d="M3 12h18"></path><circle cx="12" cy="12" r="8"></circle></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">CRM &amp; ERP Solutions</span>
+                                  <span class="mega-desc">Sales, ops, and reporting centralization</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#ui-ux-design" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1586717799252-bd134ad00e26?auto=format&fit=crop&w=1200&q=80" data-mega-title="UI/UX Design" data-mega-caption="Wireframes, prototypes, and polished interfaces optimized for usability.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M4 20l6-6"></path><path d="M14 4l6 6"></path><path d="M9 5l10 10"></path><circle cx="6" cy="18" r="2"></circle></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">UI/UX Design</span>
+                                  <span class="mega-desc">Human-centered design systems</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#cloud-hosting" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1451187580459-43490279c0fa?auto=format&fit=crop&w=1200&q=80" data-mega-title="Cloud & Hosting" data-mega-caption="Cloud deployment, secure hosting, and infrastructure optimization for stability.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M6 18h12"></path><path d="M6 14h12"></path><path d="M8 10h8"></path><path d="M12 4v6"></path></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">Cloud &amp; Hosting</span>
+                                  <span class="mega-desc">Deployment, scaling, and uptime planning</span>
+                                </span>
+                              </a>
+
+                              <a href="services.html#maintenance-support" class="mega-category" data-mega-image="https://images.unsplash.com/photo-1518773553398-650c184e0bb3?auto=format&fit=crop&w=1200&q=80" data-mega-title="Maintenance & Support" data-mega-caption="Continuous improvements, monitoring, and dependable post-launch support.">
+                                <span class="mega-icon" aria-hidden="true">
+                                  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.9"><path d="M12 3l7 4v10l-7 4-7-4V7l7-4z"></path><path d="M9 12l2 2 4-4"></path></svg>
+                                </span>
+                                <span class="mega-copy">
+                                  <span class="mega-name">Maintenance &amp; Support</span>
+                                  <span class="mega-desc">Long-term platform care and upgrades</span>
+                                </span>
+                              </a>
                             </div>
                           </div>
 
-                          <div class="lg:col-span-4 bg-[#0B1C3D] p-8 lg:p-10 text-white">
-                            <h4 class="font-heading text-lg mb-4">Category Highlights</h4>
-                            <div class="space-y-4">
-                              <div class="rounded-2xl overflow-hidden border border-white/15">
-                                <img src="https://images.unsplash.com/photo-1518770660439-4636190af475?auto=format&fit=crop&w=900&q=80" alt="Software engineering workspace" class="h-28 w-full object-cover" />
-                                <p class="px-3 py-2 text-xs text-slate-200">Custom Product Engineering</p>
-                              </div>
-                              <div class="rounded-2xl overflow-hidden border border-white/15">
-                                <img src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=900&q=80" alt="App design and development" class="h-28 w-full object-cover" />
-                                <p class="px-3 py-2 text-xs text-slate-200">Cloud-ready Digital Platforms</p>
-                              </div>
+                          <aside class="mega-preview">
+                            <div class="mega-preview-media">
+                              <img data-mega-preview-image src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6?auto=format&fit=crop&w=1200&q=80" alt="Website development preview" />
                             </div>
-                            <a href="services.html" class="primary-btn mt-6 w-full text-sm">Explore All Services</a>
-                          </div>
+                            <p class="mega-preview-kicker">Category Preview</p>
+                            <h4 data-mega-preview-title class="mega-preview-title">Website Development</h4>
+                            <p data-mega-preview-caption class="mega-preview-caption">Conversion-focused websites with strong performance, SEO structure, and clear content hierarchy.</p>
+                            <a href="services.html" class="primary-btn mt-5 w-full text-sm">Explore All Services</a>
+                          </aside>
                         </div>
                       </div>
                     </div>
@@ -174,51 +232,85 @@
   </section>
 </main>
 
-  <footer class="bg-[#0B1C3D] text-slate-200 mt-16">
-    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 grid md:grid-cols-2 lg:grid-cols-4 gap-8">
-      <div>
-        <p class="font-heading text-2xl font-semibold text-white">Total<span class="text-[#00E5A8]">Tech</span></p>
-        <p class="mt-3 text-sm text-slate-300">Modern software studio delivering reliable digital products with professional execution.</p>
+    <footer class="site-footer mt-16">
+    <div class="site-footer-glow" aria-hidden="true"></div>
+    <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-14 lg:py-16">
+      <div class="footer-hero">
+        <div>
+          <p class="footer-kicker">Build with TotalTech</p>
+          <h2 class="footer-hero-title">Ship reliable digital products with a team that delivers end-to-end.</h2>
+        </div>
+        <a href="contact.html" class="primary-btn footer-hero-btn">Start a Project</a>
       </div>
-      <div>
-        <h3 class="font-heading text-white mb-3">Company</h3>
-        <div class="space-y-2 text-sm">
-          <a href="about.html" class="footer-link block">About Us</a>
-          <a href="services.html" class="footer-link block">Services</a>
-          <a href="portfolio.html" class="footer-link block">Portfolio</a>
-          <a href="careers.html" class="footer-link block">Careers</a>
+
+      <div class="footer-main-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="footer-logo-link" aria-label="TotalTech Home">
+            <img src="assets/images/logo.png" alt="TotalTech logo" class="footer-logo" />
+          </a>
+          <p class="footer-brand-text">TotalTech partners with startups and enterprises for websites, web apps, mobile products, and cloud operations.</p>
+          <div class="footer-badges">
+            <span class="footer-badge">Agile Delivery</span>
+            <span class="footer-badge">UI/UX First</span>
+            <span class="footer-badge">Cloud Ready</span>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Company</h3>
+          <div class="footer-links">
+            <a href="about.html" class="footer-link">About Us</a>
+            <a href="services.html" class="footer-link">Services</a>
+            <a href="portfolio.html" class="footer-link">Portfolio</a>
+            <a href="careers.html" class="footer-link">Careers</a>
+            <a href="blog.html" class="footer-link">Blog</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Capabilities</h3>
+          <div class="footer-links">
+            <a href="services.html#website-development" class="footer-link">Website Development</a>
+            <a href="services.html#web-application-development" class="footer-link">Web Application Development</a>
+            <a href="services.html#mobile-application-development" class="footer-link">Mobile Application Development</a>
+            <a href="services.html#crm-erp-solutions" class="footer-link">CRM &amp; ERP Solutions</a>
+            <a href="services.html#cloud-hosting" class="footer-link">Cloud, Hosting &amp; Support</a>
+          </div>
+        </div>
+
+        <div>
+          <h3 class="footer-heading">Contact</h3>
+          <div class="footer-contact-list">
+            <p><span>Email:</span> hello@totaltech.com</p>
+            <p><span>Phone:</span> +1 (555) 321-7788</p>
+            <p><span>Location:</span> New York, United States</p>
+          </div>
+          <a href="contact.html" class="secondary-btn footer-contact-btn">Request Consultation</a>
         </div>
       </div>
-      <div>
-        <h3 class="font-heading text-white mb-3">Services</h3>
-        <div class="space-y-2 text-sm">
-          <a href="services.html#website-development" class="footer-link block">Website Development</a>
-          <a href="services.html#web-application-development" class="footer-link block">Web Apps</a>
-          <a href="services.html#mobile-application-development" class="footer-link block">Mobile Apps</a>
-          <a href="services.html#crm-erp-solutions" class="footer-link block">CRM &amp; ERP</a>
-        </div>
-      </div>
-      <div>
-        <h3 class="font-heading text-white mb-3">Contact</h3>
-        <div class="space-y-2 text-sm text-slate-300">
-          <p>hello@totaltech.com</p>
-          <p>+1 (555) 321-7788</p>
-          <p>New York, United States</p>
-          <a href="contact.html" class="primary-btn mt-3">Talk to Team</a>
-        </div>
-      </div>
-    </div>
-    <div class="border-t border-white/10">
-      <div class="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8 py-4 text-xs text-slate-400 flex flex-col sm:flex-row gap-2 sm:items-center sm:justify-between">
+
+      <div class="footer-bottom">
         <p>&copy; 2026 TotalTech. All rights reserved.</p>
-        <p>Built with HTML, Tailwind CSS, and JavaScript.</p>
+        <div class="footer-bottom-links">
+          <a href="about.html">Privacy</a>
+          <a href="about.html">Terms</a>
+          <a href="contact.html">Support</a>
+        </div>
       </div>
     </div>
   </footer>
 
-  <script src="assets/js/main.js?v=20260220b"></script>
+  <script src="assets/js/main.js?v=20260220c"></script>
 </body>
 </html>
+
+
+
+
+
+
+
+
 
 
 
